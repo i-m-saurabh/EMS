@@ -15,9 +15,9 @@ const App = () => {
         const loggedInUser = localStorage.getItem('loggedInUser')
         
         if(loggedInUser){
-        const userData = JSON.parse(loggedInUser)
-        setUser(userData.role)
-        setLoggedInUserData(userData.data)
+            const userData = JSON.parse(loggedInUser)
+            setUser(userData.role)
+            setLoggedInUserData(userData.data)            
         }
     },[])
 
@@ -39,7 +39,6 @@ const App = () => {
             alert("Invalid Credentials")
         }
     }
-
 
 
     return (
